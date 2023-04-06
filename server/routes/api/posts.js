@@ -1,8 +1,8 @@
+require('dotenv').config();
 const express = require('express');
 const mongodb = require('mongodb');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://test:test@vue-express-mongodb.wklpgjf.mongodb.net/?retryWrites=true&w=majority";
-
+const uri = `mongodb+srv://test:${process.env.SECRET_KEY}@vue-express-mongodb.wklpgjf.mongodb.net/?retryWrites=true&w=majority`;
 const router = express.Router();
 
 // Get Posts
