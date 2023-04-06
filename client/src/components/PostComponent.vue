@@ -78,6 +78,10 @@ div.post {
   margin-bottom: 15px;
 }
 
+div.post:hover {
+  cursor: pointer;
+}
+
 .hide {
   font-size: 0.75rem;
   margin-top: 0.75rem;
@@ -85,6 +89,7 @@ div.post {
 
 .hide:hover {
   color: red;
+  cursor: pointer;
 }
 
 div.created-at {
